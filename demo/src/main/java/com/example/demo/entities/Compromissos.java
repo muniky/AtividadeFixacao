@@ -16,7 +16,7 @@ public class Compromissos {
 	@Column(length = 50, nullable = false)
 	private String local;
 	@Column(length = 12, nullable = false)
-	private String contato;
+	private String contatos;
 	@Column(length = 100, nullable = false)
 	private String data;
 	@Column(length = 100, nullable = false)
@@ -35,7 +35,7 @@ public class Compromissos {
 		super();
 		this.id = id;
 		this.local = local;
-		this.contato = contatos;
+		this.contatos = contatos;
 		this.data = data;
 		this.hora = hora;
 		this.status = status;
@@ -51,10 +51,10 @@ public class Compromissos {
 		this.local = local;
 	}
 	public String getContato() {
-		return contato;
+		return contatos;
 	}
 	public void setContatos(String contatos) {
-		this.contato = contatos;
+		this.contatos = contatos;
 	}
 	public String getData() {
 		return data;

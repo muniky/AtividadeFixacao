@@ -15,7 +15,7 @@ public interface RepositoryCompromissos extends JpaRepository<Compromissos, Long
 	    Optional<Compromissos> findById(Long id);
 	    List<Compromissos> findByLocal(String local);
 	    List<Compromissos> findByData(String data);
-	    List<Compromissos> findByContato(String contatos);
+	    List<Compromissos> findByContatos(String contatos);
 	}
 
 

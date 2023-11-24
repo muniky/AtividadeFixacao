@@ -92,7 +92,7 @@ public class ControllerCompromissos {
 	
 	@GetMapping("/contatos/{contatos}")
 	public ResponseEntity<List<Compromissos>> getCompromissosContatos(@PathVariable("contatos") String contatos) {
-	    List<Compromissos> compromissos = repo.findByContato(contatos);
+	    List<Compromissos> compromissos = repo.findByContatos(contatos);
 	    
 	    if (compromissos.isEmpty()) {
 	        return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
